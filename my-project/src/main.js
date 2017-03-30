@@ -7,17 +7,20 @@ import goods from './components/goods/goods'
 import seller from './components/seller/seller'
 import ratings from './components/ratings/ratings'
 
-Vue.config.productionTip = false
 
 const routes=[
-  {path:'./goods',component:goods},
-  {path:'./seller',component:seller},
-  {path:'./ratings',component:ratings}
-  ]
-var router=new VueRouter({
-  routes:routes
+  {path: '/',component: goods},
+  {path:'/goods',component:goods},
+  {path:'/seller',component:seller},
+  {path:'/ratings',component:ratings}
+  ];
+  
+const router=new VueRouter({
+  linkActiveClass: 'active',
+  routes
 });
 Vue.use(VueRouter);
+router.push('./goods');
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

@@ -6,16 +6,16 @@
       <router-link to="/ratings" class="tab-item">评论</router-link>
       <router-link to="/seller" class="tab-item">商家</router-link>
     </div>
-    <router-view></router-view>
+    <router-view :seller="seller"></router-view>
   </div>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
   import header from './components/header/header.vue';
 export default {
-  components: {
-    'v-header':header
-  }
+    components: {
+      'v-header': header
+    }
 }
 </script>
 
