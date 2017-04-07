@@ -26,6 +26,7 @@ export default {
     font-size:14px
     color:rgba(77,85,93,0.8)
     display:block
-
+.active
+    color: rgb(240, 20, 20)
 
 </style>

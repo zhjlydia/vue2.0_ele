@@ -6,6 +6,7 @@ import VueRouter from 'vue-router'
 import goods from './components/goods/goods'
 import seller from './components/seller/seller'
 import ratings from './components/ratings/ratings'
+import './common/stylus/index.styl'
 
 
 const routes=[
