@@ -6,10 +6,13 @@
 <script>
 export default {
   name: 'header',
-  data () {
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+      seller:{}
+    };
+  },
+  created(){
+
   }
 }
 </script>
